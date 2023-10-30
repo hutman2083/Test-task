@@ -39,8 +39,8 @@
                         <a class="nav-link" href="">Контакты</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-link email" href="mailto:mr.2003sasha@mail.ru">email</a></li>
-                            <li><a class="dropdown-link viber" href="">Viber</a></li>
-                            <li><a class="dropdown-link whatsapp" href="">WhatsApp</a></li>
+                            <li><a class="dropdown-link viber" href="viber://chat?number=+375445748667">Viber</a></li>
+                            <li><a class="dropdown-link whatsapp" href="https://api.whatsapp.com/send?phone=+375445748667">WhatsApp</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -53,8 +53,8 @@
             <p>Сотовый картон – разновидность картона, внутренняя часть которого имеет отверстия в виде шестигранных сот. Данный вид упаковочного материала чаще всего состоит из 3-х частей: верхнего и нижнего гладкого слоя, которые перекрывают внутреннюю ячеечную часть.</p>
             <h2>Цена: $99.99</h2>
             <div class="buttons">
-                <a href="#" class="cta-button" onclick="showForm()">Заказать сейчас</a>
-                <a href="#" class="cta-button">Получить консультацию</a>
+                <a href="#" class="cta-button" onclick="showForm1()">Заказать сейчас</a>
+                <a href="#" class="cta-button" onclick="showForm()">Получить консультацию</a>
             </div>
         </div>
     </section>
@@ -68,6 +68,23 @@
     <button type="submit">Отправить</button>
     <button type="button" onclick="hideForm()">Назад</button>
 </form>
+
+<div class="overlay hidden" id="overlay1"></div>
+
+<form class="contact-form hidden" id="purchaseForm1" onsubmit="event.preventDefault(); submitForm1();" method="POST">
+    <input type="text" name="name" placeholder="Ваше имя" required>
+    <input type="email" name="email" placeholder="Ваш контактный номер" required>
+    <select name="sota-type" required>
+        <option value="">Выберите тип сота</option>
+        <option value="однослойный">Однослойный</option>
+        <option value="двухслойный">Двухслойный</option>
+        <option value="трехслойный">Трехслойный</option>
+        <option value="усиленный">Усиленный</option>
+        <option value="влагостойкий">Влагостойкий</option>
+    </select>
+    <button type="submit">Отправить</button>
+    <button type="button" onclick="hideForm()">Назад</button>
+</form>
+
 </body>
-    
 </html>
