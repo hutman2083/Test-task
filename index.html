@@ -13,16 +13,17 @@
            <nav class="navbar">
                 <a class="navbar-brand">
                     <img class="img-brand" src="Bee.jpg">
+                    <span class="brand-caption">Сотовые картоны "Пчёлка"</span>
                 </a>
                 <ul class="navbar-menu">
                     <li class="navbar-item">
                         <a class="nav-link" href="">Виды</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-link">Однослойный</a></li>
-                            <li><a class="dropdown-link">Двухслойный</a></li>
-                            <li><a class="dropdown-link">Трехслойный</a></li>
-                            <li><a class="dropdown-link">Усиленный</a></li>
-                            <li><a class="dropdown-link">Влагостойкий</a></li>
+                            <li><a class="dropdown-link" href="https://packpro.by/info/articles/sotovyy-karton-prochnaya-i-legkaya-alternativa-derevyannym-i-plastikovym-izdeliyam/">Однослойный</a></li>
+                            <li><a class="dropdown-link" href="https://packpro.by/info/articles/sotovyy-karton-prochnaya-i-legkaya-alternativa-derevyannym-i-plastikovym-izdeliyam/">Двухслойный</a></li>
+                            <li><a class="dropdown-link" href="https://packpro.by/info/articles/sotovyy-karton-prochnaya-i-legkaya-alternativa-derevyannym-i-plastikovym-izdeliyam/">Трехслойный</a></li>
+                            <li><a class="dropdown-link" href="https://packpro.by/info/articles/sotovyy-karton-prochnaya-i-legkaya-alternativa-derevyannym-i-plastikovym-izdeliyam/">Усиленный</a></li>
+                            <li><a class="dropdown-link" href="https://packpro.by/info/articles/sotovyy-karton-prochnaya-i-legkaya-alternativa-derevyannym-i-plastikovym-izdeliyam/">Влагостойкий</a></li>
                         </ul>
                     </li>
                     <li class="navbar-item">
@@ -59,13 +60,14 @@
     </section>
     
     <div class="overlay hidden" id="overlay"></div>
-    
-    <form class="contact-form hidden" id="purchaseForm" onsubmit="event.preventDefault(); submitForm();" action="обработчик.php" method="POST">
-        <input type="text" name="name" placeholder="Ваше имя" required>
-        <input type="email" name="email" placeholder="Ваш email" required>
-        <textarea name="message" placeholder="Ваше сообщение" required></textarea>
-        <button type="submit">Отправить</button>
-    </form>
+
+<form class="contact-form hidden" id="purchaseForm" onsubmit="event.preventDefault(); submitForm();" method="POST">
+    <input type="text" name="name" placeholder="Ваше имя" required>
+    <input type="email" name="email" placeholder="Ваш email" required>
+    <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+    <button type="submit">Отправить</button>
+    <button type="button" onclick="hideForm()">Назад</button>
+</form>
 </body>
     
 </html>
